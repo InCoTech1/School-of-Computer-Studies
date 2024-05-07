@@ -1,0 +1,142 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+#programs {
+  height: 500px;
+  background-color: white;
+}
+
+#top{
+  height: 600px;
+  background-image: url(images/au-pasay-abad.jpg);
+  background-repeat: no-repeat;
+  background-size: 1359px;
+  
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+nav {
+  background-color: rgba(255, 255, 255, 0);
+  transition: background-color 0.3s ease;
+  padding-right: 100px;
+  font-size: 20px;
+  top: 0;
+}
+
+nav.scrolled:hover{
+  background-color: #333;
+}
+
+nav.scrolled {
+  background-color: #333;
+}
+
+nav.scrolled:hover {
+  background-color: #333; 
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: right;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav ul li a {
+  color: #000;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #ccc;
+  text-decoration: none;
+}
+
+nav.scrolled:hover{
+  background-color: grey;
+}
+
+#programs {
+  background-color: #f2f2f2;
+  padding: 2rem;
+  text-align: center;
+}
+
+#programs h1 {
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.program-boxes {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.program-box {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex-basis: 32%;
+  padding: 1rem;
+  text-align: left;
+}
+
+.program-box h2 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.program-box p {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.my-button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.my-button:hover {
+  background-color: #0056b3;
+}
+
+.about-us {
+  background-color: #f9f9f9;
+  padding: 40px;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+.about-us h1, .about-us h3 {
+  color: #333;
+  text-align: center;
+}
+.about-us p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.about-us p:last-child {
+  margin-bottom: 0;
+}
+.about-us .mission-vision {
+  margin-top: 30px;
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <style>
+       
+       * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    transition: background-color 0.3s ease;
+    padding-right: 100px;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ccc;
+    text-decoration: none;
+}
+
+nav.scrolled:hover{
+    background-color: #333;
+}
+
+nav.scrolled {
+    background-color: #333;
+}
+
+nav.scrolled:hover {
+    background-color: #333; 
+}
+
+header {
+    background-image: url(images/header.png);
+    background-size: cover;
+    background-position: center;
+    height: 200px; /* Adjust height as needed */
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    color: #fff;
+    padding-top: 50px;
+    font-size: 36px;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.news-item {
+    background: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.news-item img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.news-item h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.news-item p {
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding-right: 20px;
+    }
+    nav ul li {
+        display: block;
+        margin-right: 0;
+        text-align: center;
+    }
+}
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="Program.html">Programs</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+    </header>
+    
+    
+    <div class="container">
+        <div class="news-item">
+            <img src="images/news 1.jpg" height="350px" width="600px">
+            <h3>May 3, 2024 suspension</h3>
+            <p>Classes in all Arellano University campuses in all levels tomorrow, May 3, 2024, shall be conducted online. No face to face classes.</p>
+        </div>
+        <div class="news-item">
+            <img src="images/news2.jpg" height="350px" width="600px" alt="News Image">
+            <h3>Free tuition for Senior high school</h3>
+            <p>Tuloy tuloy pa rin ang LIBRENG TUITION FEE para sa Senior High School sa darating na S.Y. 2024-2025 dito sa Arellano University - Jose Abad Santos Campus ! </p>
+        </div>
+        <div class="news-item">
+            <img src="images/see you soon.jpg" alt="News Image">
+            <h3>Graduation</h3>
+            <p>The countdown is on! Can you believe it's almost time to toss those hats and celebrate all your hard work? Here's to late-night study sessions, newfound friendships, and the incredible journey that led you here. Get ready to shine, Chiefs! 🎓 ✨</p>
+        </div>
+    </div>
+    
+</body>
+</html>

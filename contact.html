@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your custom stylesheet -->
+
+    <style>
+        /* styles.css */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #007bff;
+        }
+
+        p.intro {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .contact-form {
+            display: grid;
+            grid-gap: 1rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: calc(100% - 2rem);
+            padding: 0.7rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .btn-submit {
+            background-color: #4CAF50;
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-submit:hover {
+            background-color: #45a049;
+        }
+
+        .location {
+            margin-bottom: 2rem;
+        }
+
+        .map-responsive {
+            overflow: hidden;
+            padding-bottom: 56.25%; /* Aspect ratio (height:width) 16:9 */
+            position: relative;
+            height: 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .map-responsive iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .info-item p {
+            margin: 0;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .info-item i {
+            color: #4CAF50;
+            font-size: 1.2rem;
+        }
+
+        .back-btn {
+            margin-top: 2rem;
+        }
+
+        .back-btn a {
+            background-color: #007bff;
+            color: white;
+            padding: 0.7rem 1.5rem;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+            font-size: 1rem;
+            display: inline-block;
+        }
+
+        .back-btn a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Contact Us</h1>
+
+        <p class="intro">We'd love to hear from you! Fill out the form below and we'll get back to you shortly.</p>
+
+        <form action="thank you.html" method="post" class="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Submit</button>
+        </form>
+
+        <div class="location">
+            <h2>Our Location</h2>
+            <div class="map-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3862.6088933699165!2d120.9820239152071!3d14.576750242827215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9a76e589389%3A0x3df19579760549a7!2s4625+Casino+St%2C+Manila%2C+Metro+Manila!5e0!3m2!1sen!2sph!4v1682984619868!5m2!1sen!2sph" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+       
+
+        <div class="back-btn">
+            <a href="index.html">Back to Homepage</a>
+        </div>
+    </div>
+
+</body>
+</html>
