@@ -25,18 +25,20 @@ nav {
   padding-right: 100px;
   font-size: 20px;
   top: 0;
-}
-
-nav.scrolled:hover{
-  background-color: #333;
+  padding-top: 20px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
 }
 
 nav.scrolled {
-  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
 }
 
 nav.scrolled:hover {
-  background-color: #333; 
+  background-color: grey;
 }
 
 nav ul {
