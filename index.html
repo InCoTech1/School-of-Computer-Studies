@@ -55,5 +55,14 @@
           </div>
       </div>
   </section>
+  <script>
+    window.addEventListener('scroll', function() {
+  if (window.scrollY > 0) {
+    document.querySelector('nav').classList.add('scrolled');
+  } else {
+    document.querySelector('nav').classList.remove('scrolled');
+  }
+});
+  </script>
 </body>
 </html>
